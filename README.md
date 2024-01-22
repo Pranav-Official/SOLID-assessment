@@ -36,6 +36,12 @@ The `GameProcessor` class is designed to be open for extension and closed for mo
 
 The `OnlineGame` class is an extension of the `Game` class, demonstrating the Liskov Substitution Principle. It inherits from `Game` and introduces additional properties specific to online games.
 
+#### `OfflineGame` Class
+
+The `OfflineGame` class is an extension of the `Game` class, demonstrating the Liskov Substitution Principle. It inherits from `Game` and introduces additional properties specific to Offine games.
+
+These two Classes can be substituted interchangable, and the behaviour of the program will not change, and even and instance of `Game` can also be used, thus completed the **Liskov Substitution Principle (LSP)**
+
 ### Interface Segregation Principle (ISP)
 
 #### `GameProcessorInterface` Interface
