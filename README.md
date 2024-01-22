@@ -42,6 +42,8 @@ The `OfflineGame` class is an extension of the `Game` class, demonstrating the L
 
 These two Classes can be substituted interchangable, and the behaviour of the program will not change, and even and instance of `Game` can also be used, thus completed the **Liskov Substitution Principle (LSP)**
 
+Same fuctionality is implemented by the child classes of `Verification` Class, that are `OnlineVerification` , `SystemBasedVerification` and `KeyBasedVarification`.
+
 ### Interface Segregation Principle (ISP)
 
 #### `GameProcessorInterface` Interface
