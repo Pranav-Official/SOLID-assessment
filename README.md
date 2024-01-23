@@ -46,9 +46,17 @@ Same fuctionality is implemented by the child classes of `Verification` Class, t
 
 ### Interface Segregation Principle (ISP)
 
-#### `GameProcessorInterface` Interface
+#### `Downloadable` Interface and `Installable` Interface
 
-The `GameProcessorInterface` interface adheres to the Interface Segregation Principle by providing a specific set of methods related to game processing. This allows implementing classes to choose and implement only the methods relevant to their responsibilities.
+The `Downloadable` and Installable interface are interfaces defining two fuctionality of idownloading and intsalling games. These fuction whould normally be used together. But since it can be used individually, both the functions are defined in interfaces and then segregated.
+
+### Dependancy Inversion
+
+### `Verification` Interface
+
+There are 3 verification classes that are implementing the `Verification` Interface, that are `OnlineVerification` , `SystemBasedVerification` and `KeyBasedVarification`. SO normally we cna create objects of these classes by using the class as data type. eg `OnlineVerification newVerification = new OnlineVerification() `. This will be the program or the current class dependant on a low level module such as `OnlineVerification`. Instead we inver the depandancy to teh parent of the classes. eg `Verification newVerification = new OnlineVerification() `
+
+#### 
 
 ## Classes and Interfaces
 
