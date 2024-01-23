@@ -52,7 +52,7 @@ The `Downloadable` and Installable interface are interfaces defining two fuction
 
 ### Dependancy Inversion
 
-### `Verification` Interface
+#### `Verification` Interface
 
 There are 3 verification classes that are implementing the `Verification` Interface, that are `OnlineVerification` , `SystemBasedVerification` and `KeyBasedVarification`. SO normally we cna create objects of these classes by using the class as data type. eg `OnlineVerification newVerification = new OnlineVerification() `. This will be the program or the current class dependant on a low level module such as `OnlineVerification`. Instead we inver the depandancy to teh parent of the classes. eg `Verification newVerification = new OnlineVerification() `
 
